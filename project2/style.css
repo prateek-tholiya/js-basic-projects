@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: fantasy;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(241, 17, 21);
+}
+#container{
+    height: 350px;
+    width: 300px;
+    position: relative;
+    background-color: aquamarine;
+    border-radius: 15px;
+
+}
+#container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+#container i{
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%) scale(0);
+    opacity: 0.8;
+    transition: transform ease 0.5s ;
+}
